@@ -1,5 +1,5 @@
 - name: first play
-  hosts: node
+  hosts: web
   become: yes
   tasks:
     - name: first task
@@ -11,7 +11,7 @@
         name: telnet
         state: present
 - name: second play
-  hosts: node
+  hosts: web
   become: yes
   tasks:
     - name: first task

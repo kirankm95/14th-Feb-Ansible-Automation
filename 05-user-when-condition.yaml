@@ -1,5 +1,5 @@
 - name: user playbook
-  hosts: node
+  hosts: web
   become: yes
   ignore_errors: yes
   tasks:

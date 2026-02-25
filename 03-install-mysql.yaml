@@ -1,6 +1,6 @@
 - name: install mysql package playbook
   become: yes
-  hosts: node
+  hosts: web
   ignore_errors: true
   tasks:
     - name: install mysql task

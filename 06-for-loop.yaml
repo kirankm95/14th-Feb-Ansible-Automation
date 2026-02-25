@@ -1,5 +1,5 @@
 - name: for loop playbook
-  hosts: node
+  hosts: web
   ignore_errors: yes
   become: yes
   tasks:

@@ -1,5 +1,5 @@
 - name: install nginx package
-  hosts: node
+  hosts: web
   become: yes
   tasks: 
       - name: install nginx package
