@@ -1,0 +1,24 @@
+- name: first play
+  hosts: node
+  become: yes
+  tasks:
+    - name: first task
+      ansible.builtin.package:
+        name: postfix
+        state: present
+    - name: second task
+      ansible.builtin.package:
+        name: snmpd
+        state: present
+- name: second play
+  hosts: node
+  become: yes
+  tasks:
+    - name: first task
+      ansible.builtin.package:
+        name: postgres
+        state: present
+    - name: second task
+      ansible.nuitin.package:
+        name: mongodb
+        state: present
