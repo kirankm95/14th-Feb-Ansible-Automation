@@ -1,5 +1,5 @@
 - name: my first ansible playbook
-  hosts: 13.220.92.192
+  hosts: node
   become: yes
   tasks: 
       - name: ping task
