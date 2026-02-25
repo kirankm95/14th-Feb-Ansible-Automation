@@ -4,6 +4,6 @@
   ignore_errors: true
   tasks:
     - name: install mysql task
-      ansible.buitin.package:
+      ansible.builtin.package:
         name: mysql
         state: present
