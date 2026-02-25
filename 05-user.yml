@@ -5,3 +5,6 @@
     - name: user task
       ansible.builtin.command: id roboshop
       register: USER
+    - name: print task
+      ansible.builtin.debug:
+      msg: "output is {{out.rc}}"
