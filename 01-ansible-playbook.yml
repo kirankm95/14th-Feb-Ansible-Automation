@@ -2,5 +2,5 @@
   hosts: localhost
   become: yes
   tasks: 
-      - name: ping-task
+      - name: ping task
         ansible.buitin.ping:
