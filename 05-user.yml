@@ -8,4 +8,4 @@
       register: USER
     - name: print task
       ansible.builtin.debug:
-        msg: "output is"
+        msg: "output is {{out.rc}}"
