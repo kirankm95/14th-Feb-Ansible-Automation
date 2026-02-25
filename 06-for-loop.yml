@@ -5,7 +5,7 @@
   tasks:
     - name: create users in loop
       ansible.builtin.user:
-        name: {{item}}
+        name: "{{item}}"
         state: present
       loop:
         - kiran
