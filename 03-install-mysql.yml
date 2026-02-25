@@ -9,6 +9,6 @@
         state: present
     - name: run  mysql task
       ansible.builtin.service:
-        name: mysql
+        name: sshd
         state: started
         enabled: yes
