@@ -1,6 +1,6 @@
 - name: my first ansible playbook
   hosts: localhost
   become: yes
-  -tasks: 
+  tasks: 
       - name: ping-task
         ansible.buitin.ping:
