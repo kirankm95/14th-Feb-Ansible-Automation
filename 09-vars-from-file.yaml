@@ -1,0 +1,9 @@
+- name: variables from file playbook
+  hosts: web
+  become: yes
+  ignore_errors: yes
+  vars_file: variables.ini
+  tasks:
+  - name: variables from file task
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON1}} and Hi {{PERSON2}}"
