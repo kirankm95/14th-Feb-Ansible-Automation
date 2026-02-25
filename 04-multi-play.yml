@@ -19,6 +19,6 @@
         name: postgres
         state: present
     - name: second task
-      ansible.nuitin.package:
+      ansible.builtin.package:
         name: mongodb
         state: present
