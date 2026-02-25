@@ -1,0 +1,8 @@
+- name: variables from inventory file
+  hosts: web
+  become: yes
+  ignore_errors: yes
+  tasks:
+  - name: variables from inventory file
+    ansible.builtin.debug:
+      msg: "Hi {{NAME}} the wishes is {{WISHES}}"
