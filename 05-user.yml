@@ -1,6 +1,7 @@
 - name: user playbook
   hosts: node
   become: yes
+  ignore_errors: yes
   tasks:
     - name: user task
       ansible.builtin.command: id roboshop
