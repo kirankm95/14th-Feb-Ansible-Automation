@@ -8,7 +8,7 @@
         state: present
     - name: second task
       ansible.builtin.package:
-        name: snmp
+        name: telnet
         state: present
 - name: second play
   hosts: node
