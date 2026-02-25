@@ -1,0 +1,13 @@
+- name: data types playbook
+  become: yes
+  hosts: node
+  ignore_errors: yes
+  tasks:
+    - name: key value pair
+        user: kiran
+        company: entain
+    - name: list
+        skills- {linux, vmware}
+    - name: print
+        ansible.builtin.debug:
+        msg: "{{user}}"
