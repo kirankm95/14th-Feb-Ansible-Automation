@@ -1,0 +1,9 @@
+- name: install mysql package playbook
+  become: yes
+  hosts: node
+  ignore_errors: true
+  task:
+    - name: install mysql task
+      ansible.buitin.package:
+        name: mysql
+        state: present
