@@ -16,9 +16,9 @@
   tasks:
     - name: first task
       ansible.builtin.package:
-        name: postgres
+        name: git
         state: present
     - name: second task
       ansible.builtin.package:
-        name: mongodb
+        name: which
         state: present
