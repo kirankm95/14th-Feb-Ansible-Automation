@@ -1,0 +1,12 @@
+- name: variables playbook
+  become: yes
+  ignore_errors: yes
+  hosts: web
+  vars:
+    COURSE: "DAWS-76s"
+    TRAINER: "Sivakumar"
+    DURATION: "4 months"
+  tasks:
+  - name: variables print task
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}} and from {{TRAINER}} and duration is {{DURATION}}"

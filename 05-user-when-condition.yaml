@@ -3,14 +3,14 @@
   become: yes
   ignore_errors: yes
   tasks:
-    - name: user task
-      ansible.builtin.command: id roboshop
-      register: USER
-    - name: print task
-      ansible.builtin.debug:
-        msg: "output is {{USER.rc}}"
-    - name: create user
-      ansible.builtin.user:
-        name: roboshop
-        state: present
-      when: USER.rc != 0
+  - name: user task
+    ansible.builtin.command: id roboshop
+    register: USER
+  - name: print task
+    ansible.builtin.debug:
+      msg: "output is {{USER.rc}}"
+  - name: create user
+    ansible.builtin.user:
+      name: roboshop
+      state: present
+    when: USER.rc != 0

@@ -3,12 +3,12 @@
   hosts: web
   ignore_errors: true
   tasks:
-    - name: install mysql task
-      ansible.builtin.package:
-        name: mysql
-        state: present
-    - name: run  mysql task
-      ansible.builtin.service:
-        name: sshd
-        state: started
-        enabled: yes
+  - name: install mysql task
+    ansible.builtin.package:
+      name: mysql
+      state: present
+  - name: run  mysql task
+    ansible.builtin.service:
+      name: sshd
+      state: started
+      enabled: yes

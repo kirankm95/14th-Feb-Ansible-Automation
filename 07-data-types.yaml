@@ -3,7 +3,7 @@
   hosts: web
   ignore_errors: yes
   vars:
-    - name: key value pair
+  - name: key value pair
         user: kiran
         company: entain
     - name: list

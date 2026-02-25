@@ -2,23 +2,23 @@
   hosts: web
   become: yes
   tasks:
-    - name: first task
-      ansible.builtin.package:
-        name: postfix
-        state: present
-    - name: second task
-      ansible.builtin.package:
-        name: telnet
-        state: present
+  - name: first task
+    ansible.builtin.package:
+      name: postfix
+      state: present
+  - name: second task
+    ansible.builtin.package:
+      name: telnet
+      state: present
 - name: second play
   hosts: web
   become: yes
   tasks:
-    - name: first task
-      ansible.builtin.package:
-        name: git
-        state: present
-    - name: second task
-      ansible.builtin.package:
-        name: which
-        state: present
+  - name: first task
+    ansible.builtin.package:
+      name: git
+      state: present
+  - name: second task
+    ansible.builtin.package:
+      name: which
+      state: present
