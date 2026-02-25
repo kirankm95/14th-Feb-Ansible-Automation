@@ -2,6 +2,13 @@
   hosts: web
   become: yes
   ignore_errors: yes
+  vars_prompt:
+    - name: "NAME"
+      prompt: "Enter the username"
+      private: no
+    - name: "WISHES"
+      prompt: "Enter the wishes"
+      private: yes
   tasks:
   - name: variables from inventory file
     ansible.builtin.debug:
