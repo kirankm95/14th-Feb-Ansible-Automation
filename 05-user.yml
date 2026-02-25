@@ -9,3 +9,8 @@
     - name: print task
       ansible.builtin.debug:
         msg: "output is {{USER.rc}}"
+    - name: create user
+      ansible.builtin.user:
+        name: roboshop
+        state: present
+        when: USER.rc != 0
