@@ -1,0 +1,15 @@
+- name: for loop playbook
+  hosts: node
+  ignore_errors: yes
+  become: yes
+  tasks:
+    - name: create users in loop
+      ansible.builtin.user:
+        name: {{item}}
+        state: present
+      loop:
+        - kiran
+        - kumar
+        - ramya
+        - chinni
+        - nayanshi
